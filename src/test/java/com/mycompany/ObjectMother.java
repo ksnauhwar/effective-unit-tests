@@ -2,8 +2,7 @@ package com.mycompany;
 
 
 public class ObjectMother {
-    public static Customer
-    customerWithOneOfEachRentalType(
+    public static Customer customerWithOneOfEachRentalType(
             String name) {
         Customer result =
                 customerWithOneNewReleaseAndOneRegular(
@@ -13,8 +12,8 @@ public class ObjectMother {
                         new Movie("Lion King", Type.CHILDREN), 3));
         return result;
     }
-    public static Customer
-    customerWithOneNewReleaseAndOneRegular(
+
+    public static Customer customerWithOneNewReleaseAndOneRegular(
             String n) {
         Customer result =
                 customerWithOneNewRelease(n);
@@ -24,8 +23,7 @@ public class ObjectMother {
         return result;
     }
 
-    public static Customer
-    customerWithOneNewRelease(
+    public static Customer customerWithOneNewRelease(
             String name) {
         Customer result =
                 customerWithNoRentals(name);
@@ -35,8 +33,8 @@ public class ObjectMother {
                                 "Godfather 4", Type.NEW_RELEASE), 3));
         return result;
     }
-    public static Customer
-    customerWithNoRentals(String name) {
+
+    public static Customer customerWithNoRentals(String name) {
         return new Customer(name);
     }
 }
